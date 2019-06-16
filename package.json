@@ -1,0 +1,14 @@
+{
+  "name": "smallgame",
+  "version": "1.0.0",
+  "description": "this is my smallgame",
+  "main": "inx.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "LQ",
+  "license": "ISC",
+  "dependencies": {
+    "nodejs-websocket": "^1.7.2"
+  }
+}
