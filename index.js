@@ -108,7 +108,6 @@ function broadcastroom(server, info,room){
     server.connections.forEach((conn)=>{
         room_userlist.forEach((val)=>{
             if(conn.uid != val.uid ){
-                
                 conn.sendText(JSON.stringify(info));
              }
         })
