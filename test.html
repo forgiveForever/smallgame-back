@@ -19,10 +19,34 @@
     </div>
 
     <script>
-        var mess = document.getElementById("mess");
-        if(window.WebSocket){
-            var ws = getWebsocket()
+        var test= [
+            { 
+                name:"123",
+                list:[1,2,3]
+        },
+        { 
+                name:"1234",
+                list:[1,2,3,4]
         }
+        
+        ];
+
+        function add(name,num){
+          test.forEach((val)=>{
+              if(val.name ==name){
+                  val.list.push(num)
+              }
+          })
+        }
+       var a = "123"
+        var c = test.filter((val)=>{
+            return val.name == a
+        })
+        console.log(c)
+        // var mess = document.getElementById("mess");
+        // if(window.WebSocket){
+        //     var ws = getWebsocket()
+        // }
     </script>
 </body>
 </html>
